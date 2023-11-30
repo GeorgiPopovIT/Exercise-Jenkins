@@ -11,13 +11,13 @@ pipeline {
 
         stage('NPM install') {
             steps {
-                bat: "npm install"
+                bat "npm install"
             }
         }
         
         stage('Run integration tests') {
             steps {
-               bat: "npm run test"
+               bat "npm run test"
             }
         }
     }
